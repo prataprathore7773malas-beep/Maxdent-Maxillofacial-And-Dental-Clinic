@@ -1,1123 +1,616 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Maxdent Maxillofacial & Dental Clinic | Best Dental Clinic in Ajmer</title>
-
-<meta name="description" content="Maxdent Maxillofacial & Dental Clinic, Chanderverdai Nagar, Ajmer. Expert Dental Care, Root Canal, Dental Implants, Oral & Maxillofacial Surgery, Emergency Dental Care.">
-
-<meta name="keywords" content="Dental Clinic Ajmer, Root Canal, RCT, Dental Implants, Oral Surgery, Dentist Ajmer, Maxdent">
-
+<title>Maxdent Maxillofacial & Dental Clinic | Ajmer</title>
+<meta name="description" content="Maxdent Maxillofacial & Dental Clinic, Ajmer. Advanced dental, maxillofacial and surgical care.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-<link rel="stylesheet" href="style.css">
+<style>
+:root{
+ --primary:#0b2a4a;
+ --secondary:#123f6b;
+ --accent:#1e6aa8;
+ --dark:#071827;
+ --light:#fff;
+ --bg:#f5f8fb;
+ --text:#526579;
+ --border:#dce5ee;
+ --shadow:0 16px 45px rgba(7,24,39,.10);
+ --radius:20px;
+}
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:Poppins,sans-serif;background:var(--bg);color:var(--dark);line-height:1.7;overflow-x:hidden}
+a{text-decoration:none;color:inherit} ul{list-style:none} img{width:100%;display:block}
+.container{width:100%;max-width:1280px;margin:auto}
+section{padding:90px 6%}
+h1{font-size:58px;line-height:1.12;font-weight:800}
+h2{font-size:42px;line-height:1.2;font-weight:700}
+h3{font-size:23px;font-weight:600}
+p{font-size:16px;color:var(--text)}
+.section-title{text-align:center;max-width:850px;margin:0 auto 55px}
+.section-title span,.section-tag{
+ display:inline-block;padding:8px 20px;border-radius:50px;background:#e8f0f7;
+ color:var(--primary);font-weight:700;font-size:13px;letter-spacing:.5px;margin-bottom:15px
+}
+.section-title p{max-width:700px;margin:16px auto 0}
+.btn-primary,.btn-secondary{
+ display:inline-flex;align-items:center;justify-content:center;padding:15px 30px;border-radius:50px;
+ font-weight:600;transition:.35s;cursor:pointer
+}
+.btn-primary{background:var(--primary);color:#fff;box-shadow:0 12px 30px rgba(11,42,74,.22)}
+.btn-primary:hover{background:var(--secondary);transform:translateY(-4px)}
+.btn-secondary{border:2px solid #fff;color:#fff}
+.btn-secondary:hover{background:#fff;color:var(--primary);transform:translateY(-4px)}
 
+/* TOP BAR */
+.top-bar{background:var(--dark);color:#fff;padding:10px 6%;font-size:13px}
+.top-bar .container{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}
+.top-left,.top-right{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.top-bar i{margin-right:7px}
+.top-right a:hover{color:#9fc9e9}
+
+/* HEADER */
+header{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);box-shadow:0 5px 25px rgba(0,0,0,.06)}
+.navbar{display:flex;align-items:center;justify-content:space-between;padding:13px 6%}
+.logo{display:flex;align-items:center;gap:12px}
+.logo img{width:58px;height:58px;object-fit:contain}
+.logo h2{font-size:25px;color:var(--primary);margin:0}
+.logo p{font-size:11px;color:var(--text);margin:0}
+.nav-links{display:flex;gap:27px;align-items:center}
+.nav-links a{font-weight:500;position:relative;transition:.3s}
+.nav-links a:hover,.nav-links a.active{color:var(--primary)}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:-7px;width:0;height:2px;background:var(--primary);transition:.3s}
+.nav-links a:hover::after,.nav-links a.active::after{width:100%}
+.menu-btn{display:none;font-size:28px;color:var(--primary);cursor:pointer}
+
+/* HERO VIDEO */
+.hero{position:relative;min-height:780px;display:flex;align-items:center;padding:100px 6%;overflow:hidden;color:#fff}
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,20,35,.92),rgba(7,31,53,.72),rgba(7,31,53,.55));z-index:1}
+.hero-wrapper{position:relative;z-index:2;max-width:1280px;width:100%;margin:auto}
+.hero-content{max-width:790px}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;padding:9px 18px;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.25);border-radius:50px;margin-bottom:22px}
+.hero h1{margin-bottom:22px}
+.hero h1 span{display:block;color:#b9dcf7}
+.hero p{color:#e5edf5;max-width:700px;margin-bottom:30px}
+.hero-buttons{display:flex;gap:15px;flex-wrap:wrap;margin-bottom:35px}
+.hero .btn-primary{background:#fff;color:var(--primary)}
+.hero-stats{display:flex;gap:15px;flex-wrap:wrap}
+.stat-box{min-width:145px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(8px);padding:17px;border-radius:15px;text-align:center}
+.stat-box h2{font-size:29px;color:#fff}
+.stat-box p{color:#dce9f4;font-size:13px}
+
+/* COMMON CARDS */
+.trust{background:#fff;padding:55px 6%}
+.trust .container{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.trust-box{padding:28px 20px;text-align:center;border:1px solid var(--border);border-radius:18px;background:#fff;box-shadow:var(--shadow);transition:.35s}
+.trust-box:hover,.why-card:hover,.treatment-card:hover,.doctor-card:hover,.review-card:hover,.contact-card:hover{transform:translateY(-8px)}
+.trust-box i{font-size:34px;color:var(--primary);margin-bottom:12px}
+.trust-box h3{font-size:19px;margin-bottom:5px}
+.trust-box p{font-size:13px}
+
+.about{background:var(--bg)}
+.about-wrapper{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}
+.about-image img{border-radius:24px;box-shadow:var(--shadow)}
+.about-content h2{margin-bottom:18px}
+.about-content p{margin-bottom:16px}
+.about-features{display:grid;grid-template-columns:repeat(2,1fr);gap:13px;margin:28px 0}
+.feature{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:500}
+.feature i{width:31px;height:31px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--primary);color:#fff;font-size:12px}
+
+/* DOCTORS */
+.doctors{background:#fff}
+.doctor-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:30px;max-width:1050px;margin:auto}
+.doctor-card{display:grid;grid-template-columns:230px 1fr;gap:28px;align-items:center;padding:25px;border-radius:22px;background:#fff;border:1px solid var(--border);box-shadow:var(--shadow);transition:.35s}
+.doctor-photo{height:290px;overflow:hidden;border-radius:17px;background:#e8eef4}
+.doctor-photo img{height:100%;object-fit:cover}
+.doctor-card h3{color:var(--primary);margin-bottom:8px}
+.doctor-qualification{font-weight:600;color:var(--secondary);font-size:14px;margin-bottom:9px}
+.doctor-role{font-size:14px;font-weight:600;color:#273d52;margin-bottom:15px}
+.doctor-address{font-size:13px;color:var(--text);padding-top:13px;border-top:1px solid var(--border)}
+.doctor-address i{color:var(--primary);margin-right:6px}
+
+/* WHY */
+.why-us{background:#f0f5f9}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+.why-card{background:#fff;padding:30px;border-radius:19px;text-align:center;border:1px solid var(--border);box-shadow:var(--shadow);transition:.35s}
+.why-card i{width:72px;height:72px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 18px;background:var(--primary);color:#fff;font-size:28px}
+.why-card h3{font-size:20px;margin-bottom:9px}
+
+/* TREATMENTS */
+.treatments{background:#fff}
+.treatment-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.treatment-card{position:relative;overflow:hidden;background:#fff;border:1px solid var(--border);border-radius:19px;box-shadow:var(--shadow);transition:.35s}
+.treatment-img{height:180px;overflow:hidden}
+.treatment-img img{height:100%;object-fit:cover;transition:.5s}
+.treatment-card:hover .treatment-img img{transform:scale(1.06)}
+.treatment-body{padding:23px}
+.treatment-body i{color:var(--primary);font-size:23px;margin-bottom:10px}
+.treatment-body h3{font-size:19px;margin-bottom:8px}
+.treatment-body p{font-size:13px}
+
+/* REVIEWS */
+.reviews{background:var(--bg)}
+.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+.review-card{background:#fff;padding:30px;border-radius:19px;box-shadow:var(--shadow);border:1px solid var(--border);transition:.35s}
+.review-stars{color:#f5b400;font-size:20px;margin-bottom:12px}
+.review-card h3{color:var(--primary);font-size:18px;margin-bottom:10px}
+.review-card p{font-size:14px;font-style:italic}
+
+/* APPOINTMENT */
+.appointment{background:#fff}
+.appointment-wrapper{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.appointment-content span{display:inline-block;padding:8px 18px;border-radius:50px;background:#e8f0f7;color:var(--primary);font-weight:700;font-size:13px;margin-bottom:15px}
+.appointment-content h2{margin-bottom:18px}
+.appointment-content p{margin-bottom:25px}
+.appointment-content li{display:flex;gap:10px;align-items:center;margin-bottom:13px;font-weight:500}
+.appointment-content li i{color:var(--primary)}
+.appointment-form{background:#f7f9fb;padding:35px;border-radius:22px;box-shadow:var(--shadow);border:1px solid var(--border)}
+.input-group{margin-bottom:17px}
+.input-group input,.input-group textarea,.input-group select{width:100%;padding:14px 16px;border:1px solid var(--border);border-radius:11px;background:#fff;font:inherit;outline:none}
+.input-group input:focus,.input-group textarea:focus,.input-group select:focus{border-color:var(--primary)}
+.input-group textarea{resize:none}
+.appointment-form button{width:100%;border:0}
+
+/* FAQ */
+.faq{background:var(--bg)}
+.faq-container{max-width:900px;margin:auto}
+.faq-item{background:#fff;border-radius:16px;box-shadow:var(--shadow);margin-bottom:15px;overflow:hidden;border:1px solid var(--border)}
+.faq-question{width:100%;padding:20px 23px;display:flex;justify-content:space-between;align-items:center;background:#fff;border:0;font:600 17px Poppins;cursor:pointer;text-align:left}
+.faq-question i{color:var(--primary)}
+.faq-answer{max-height:0;overflow:hidden;transition:.4s}
+.faq-answer p{padding:0 23px 22px}
+
+/* GALLERY */
+.gallery{background:#fff}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.gallery-item{height:270px;border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
+.gallery-item img{height:100%;object-fit:cover;transition:.5s}
+.gallery-item:hover img{transform:scale(1.05)}
+
+/* BEFORE AFTER */
+.before-after{background:#f0f5f9}
+.slider-shell{position:relative;max-width:1160px;margin:auto}
+.ba-track{display:flex;gap:18px;overflow-x:auto;scroll-behavior:smooth;scrollbar-width:none;padding:8px 3px 20px}
+.ba-track::-webkit-scrollbar{display:none}
+.ba-card{min-width:calc((100% - 54px)/4);background:#fff;border:1px solid var(--border);border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
+.ba-images{display:grid;grid-template-columns:1fr 1fr;height:220px}
+.ba-images img{height:100%;object-fit:cover}
+.ba-labels{display:grid;grid-template-columns:1fr 1fr;text-align:center;font-size:12px;font-weight:700;background:#fff}
+.ba-labels div{padding:9px;color:var(--primary)}
+.slider-btn{position:absolute;top:42%;transform:translateY(-50%);width:48px;height:48px;border-radius:50%;border:0;background:var(--primary);color:#fff;box-shadow:0 8px 20px rgba(0,0,0,.2);cursor:pointer;z-index:3}
+.slider-btn.left{left:-24px}.slider-btn.right{right:-24px}
+
+/* CONTACT */
+.contact{background:#fff}
+.contact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.contact-card{background:#fff;border:1px solid var(--border);padding:28px 20px;text-align:center;border-radius:18px;box-shadow:var(--shadow);transition:.35s}
+.contact-card i{width:62px;height:62px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;margin:auto auto 15px;font-size:24px}
+.contact-card h3{font-size:18px;margin-bottom:9px}
+.contact-card a{color:var(--primary);font-weight:600}
+.clinic-addresses{display:grid;grid-template-columns:1fr 1fr;gap:25px;margin-top:28px}
+.address-box{background:#f4f7fa;border:1px solid var(--border);border-radius:18px;padding:25px}
+.address-box h3{color:var(--primary);font-size:19px;margin-bottom:8px}
+.address-box p{font-size:14px}
+
+/* EMERGENCY */
+.emergency{padding:80px 6%;background:var(--primary);color:#fff;text-align:center}
+.emergency h2{color:#fff;margin-bottom:15px}
+.emergency p{color:#dce8f2;max-width:700px;margin:0 auto 28px}
+.emergency .hero-buttons{justify-content:center}
+
+/* FOOTER */
+footer{background:var(--dark);color:#fff;padding:70px 6% 25px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1.5fr 1.5fr;gap:35px}
+.footer-grid h2,.footer-grid h3{margin-bottom:15px;color:#fff}
+.footer-grid p,.footer-grid li{color:#b9c8d6;margin-bottom:9px;font-size:14px}
+.footer-grid a:hover{color:#fff}
+.social-link{display:inline-flex;align-items:center;gap:8px;margin-top:7px;color:#cbd9e5}
+.copyright{margin-top:45px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12);text-align:center}
+.copyright p{color:#91a4b6;font-size:13px;margin:4px}
+
+/* FLOATING */
+.whatsapp-float,.call-float,#scrollTop{position:fixed;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:24px;z-index:999;box-shadow:0 12px 25px rgba(0,0,0,.22);transition:.3s;border:0}
+.whatsapp-float{right:20px;bottom:20px;background:#25d366}.call-float{right:20px;bottom:90px;background:var(--primary)}
+#scrollTop{left:20px;bottom:20px;background:#315d84;cursor:pointer;opacity:0;visibility:hidden}
+#scrollTop.show{opacity:1;visibility:visible}
+.whatsapp-float:hover,.call-float:hover,#scrollTop:hover{transform:translateY(-5px) scale(1.05)}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(35px);transition:.8s ease}.reveal.show{opacity:1;transform:translateY(0)}
+
+@media(max-width:1100px){
+ .treatment-grid{grid-template-columns:repeat(2,1fr)}
+ .trust .container{grid-template-columns:repeat(2,1fr)}
+ .contact-grid{grid-template-columns:repeat(2,1fr)}
+ .doctor-card{grid-template-columns:190px 1fr}
+ .ba-card{min-width:calc((100% - 36px)/3)}
+ .footer-grid{grid-template-columns:1.5fr 1fr 1fr}
+}
+@media(max-width:900px){
+ .nav-links{position:fixed;top:84px;left:-100%;width:100%;background:#fff;flex-direction:column;align-items:flex-start;padding:25px 7%;gap:18px;transition:.35s;box-shadow:0 15px 30px rgba(0,0,0,.08)}
+ .nav-links.active{left:0}.menu-btn{display:block}
+ .nav-btn{display:none}
+ .doctor-grid,.about-wrapper,.appointment-wrapper{grid-template-columns:1fr}
+ .doctor-card{max-width:650px;margin:auto}
+ .why-grid,.review-grid{grid-template-columns:repeat(2,1fr)}
+ .ba-card{min-width:calc((100% - 18px)/2)}
+ .footer-grid{grid-template-columns:1.5fr 1fr}
+}
+@media(max-width:650px){
+ section{padding:70px 5%} h1{font-size:39px} h2{font-size:31px}
+ .hero{min-height:720px;padding:80px 5%}
+ .hero-buttons{flex-direction:column}.hero-buttons a{width:100%}
+ .hero-stats{display:grid;grid-template-columns:1fr 1fr}.stat-box{min-width:0}
+ .trust .container,.why-grid,.treatment-grid,.review-grid,.contact-grid,.gallery-grid{grid-template-columns:1fr}
+ .about-features{grid-template-columns:1fr}
+ .doctor-card{grid-template-columns:1fr;padding:18px}
+ .doctor-photo{height:300px}
+ .clinic-addresses{grid-template-columns:1fr}
+ .ba-card{min-width:82%}
+ .slider-btn.left{left:-7px}.slider-btn.right{right:-7px}
+ .footer-grid{grid-template-columns:1fr;text-align:center}
+ .top-bar .container{justify-content:center;text-align:center}
+ .top-left,.top-right{justify-content:center}
+}
+@media(max-width:420px){
+ h1{font-size:34px}.hero-stats{grid-template-columns:1fr}
+ .logo img{width:48px;height:48px}.logo h2{font-size:21px}
+ .logo p{font-size:9px}
+}
+</style>
 </head>
-
 <body>
 
-<!--=========================
-TOP BAR
-==========================-->
-
 <div class="top-bar">
-
-<div class="container">
-
-<div class="top-left">
-
-<span>
-<i class="fa-solid fa-phone"></i>
-8949053447
-</span>
-
-<span>
-<i class="fa-solid fa-location-dot"></i>
-Chanderverdai Nagar, Ajmer
-</span>
-
+ <div class="container">
+  <div class="top-left">
+   <span><i class="fa-solid fa-phone"></i>8949053447</span>
+   <span><i class="fa-solid fa-location-dot"></i>Ajmer, Rajasthan</span>
+  </div>
+  <div class="top-right">
+   <a href="https://wa.me/918949053447" target="_blank"><i class="fab fa-whatsapp"></i>WhatsApp</a>
+   <a href="#appointment">Book Appointment</a>
+  </div>
+ </div>
 </div>
-
-<div class="top-right">
-
-<a href="https://wa.me/918949053447" target="_blank">
-<i class="fab fa-whatsapp"></i>
-WhatsApp
-</a>
-
-<a href="#appointment">
-Book Appointment
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-<!--=========================
-HEADER
-==========================-->
 
 <header>
-
-<div class="container navbar">
-
-<a href="#" class="logo">
-
-<img src="logo.png" alt="Maxdent Logo">
-
-<div>
-<h2>MAXDENT</h2>
-<p>Maxillofacial & Dental Clinic</p>
-</div>
-
-</a>
-
-<nav>
-
-<ul class="nav-links">
-
-<li><a href="#home">Home</a></li>
-
-<li><a href="#about">About</a></li>
-
-<li><a href="#treatments">Treatments</a></li>
-
-<li><a href="#reviews">Reviews</a></li>
-
-<li><a href="#faq">FAQ</a></li>
-
-<li><a href="#contact">Contact</a></li>
-
-</ul>
-
-</nav>
-
-<div class="nav-btn">
-
-<a href="#appointment" class="btn-primary">
-
-Book Appointment
-
-</a>
-
-</div>
-
-<div class="menu-btn">
-
-<i class="fa-solid fa-bars"></i>
-
-</div>
-
-</div>
-
+ <div class="container navbar">
+  <a href="#home" class="logo">
+   <img src="logo.png" alt="Maxdent Logo">
+   <div><h2>MAXDENT</h2><p>Maxillofacial & Dental Clinic</p></div>
+  </a>
+  <nav>
+   <ul class="nav-links">
+    <li><a href="#home">Home</a></li><li><a href="#about">About</a></li>
+    <li><a href="#doctors">Doctors</a></li><li><a href="#treatments">Treatments</a></li>
+    <li><a href="#reviews">Reviews</a></li><li><a href="#gallery">Clinic</a></li>
+    <li><a href="#before-after">Results</a></li><li><a href="#faq">FAQ</a></li><li><a href="#contact">Contact</a></li>
+   </ul>
+  </nav>
+  <div class="nav-btn"><a href="#appointment" class="btn-primary">Book Appointment</a></div>
+  <div class="menu-btn"><i class="fa-solid fa-bars"></i></div>
+ </div>
 </header>
 
-<!--=========================
-HERO SECTION
-==========================-->
-
 <section class="hero" id="home">
-
-<div class="container hero-wrapper">
-
-<div class="hero-content">
-
-<span class="hero-tag">
-
-<i class="fa-solid fa-star"></i>
-
-Rated 5.0 ★ | Trusted Dental Clinic
-
-</span>
-
-<h1>
-
-Healthy Smiles Begin At
-
-<span>
-
-Maxdent Maxillofacial & Dental Clinic
-
-</span>
-
-</h1>
-
-<p>
-
-Providing advanced dental care with modern technology and experienced professionals. From Root Canal Treatment to Oral & Maxillofacial Surgery, we are committed to giving every patient the highest quality treatment in a safe and comfortable environment.
-
-</p>
-
-<div class="hero-buttons">
-
-<a href="#appointment" class="btn-primary">
-
-Book Appointment
-
-</a>
-
-<a href="tel:8949053447" class="btn-secondary">
-
-Call Now
-
-</a>
-
-</div>
-
-<div class="hero-stats">
-
-<div class="stat-box">
-
-<h2>5.0★</h2>
-
-<p>Patient Rating</p>
-
-</div>
-
-<div class="stat-box">
-
-<h2>6+</h2>
-
-<p>Verified Reviews</p>
-
-</div>
-
-<div class="stat-box">
-
-<h2>4+</h2>
-
-<p>Years Experience</p>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="hero-image">
-
-<img src="hero-dentist.png" alt="Maxdent Dental Clinic">
-
-<div class="experience-card">
-
-<h3>Advanced Dental Care</h3>
-
-<p>Modern Equipment & Expert Team</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section><!--====================================
-TRUST SECTION
-=====================================-->
+ <video class="hero-video" autoplay muted loop playsinline>
+  <source src="hero.mp4" type="video/mp4">
+ </video>
+ <div class="hero-overlay"></div>
+ <div class="hero-wrapper">
+  <div class="hero-content">
+   <div class="hero-tag"><i class="fa-solid fa-star"></i> Rated 5.0 ★ | Trusted Dental & Maxillofacial Care</div>
+   <h1>Healthy Smiles Begin At <span>Maxdent Maxillofacial & Dental Clinic</span></h1>
+   <p>Providing advanced dental, maxillofacial and surgical care with modern technology and experienced professionals in a safe, comfortable environment.</p>
+   <div class="hero-buttons">
+    <a href="#appointment" class="btn-primary">Book Appointment</a>
+    <a href="tel:8949053447" class="btn-secondary">Call Now</a>
+   </div>
+   <div class="hero-stats">
+    <div class="stat-box"><h2>5.0★</h2><p>Patient Rating</p></div>
+    <div class="stat-box"><h2>6+</h2><p>Verified Reviews</p></div>
+    <div class="stat-box"><h2>4+</h2><p>Years Experience</p></div>
+   </div>
+  </div>
+ </div>
+</section>
 
 <section class="trust">
-
-<div class="container">
-
-<div class="trust-box">
-
-<i class="fa-solid fa-star"></i>
-
-<h3>5.0 Rating</h3>
-
-<p>Trusted by Patients</p>
-
-</div>
-
-<div class="trust-box">
-
-<i class="fa-solid fa-user-doctor"></i>
-
-<h3>Expert Dental Care</h3>
-
-<p>Experienced Specialists</p>
-
-</div>
-
-<div class="trust-box">
-
-<i class="fa-solid fa-tooth"></i>
-
-<h3>Advanced Dentistry</h3>
-
-<p>Latest Equipment</p>
-
-</div>
-
-<div class="trust-box">
-
-<i class="fa-solid fa-heart-circle-check"></i>
-
-<h3>Patient First</h3>
-
-<p>Safe & Comfortable Care</p>
-
-</div>
-
-</div>
-
+ <div class="container">
+  <div class="trust-box reveal"><i class="fa-solid fa-star"></i><h3>5.0 Rating</h3><p>Trusted by Patients</p></div>
+  <div class="trust-box reveal"><i class="fa-solid fa-user-doctor"></i><h3>Expert Dental Care</h3><p>Experienced Specialists</p></div>
+  <div class="trust-box reveal"><i class="fa-solid fa-tooth"></i><h3>Advanced Dentistry</h3><p>Modern Equipment</p></div>
+  <div class="trust-box reveal"><i class="fa-solid fa-heart-circle-check"></i><h3>Patient First</h3><p>Safe & Comfortable Care</p></div>
+ </div>
 </section>
-
-<!--====================================
-ABOUT SECTION
-=====================================-->
 
 <section class="about" id="about">
+ <div class="container about-wrapper">
+  <div class="about-image reveal"><img src="about.jpg" alt="Maxdent Clinic"></div>
+  <div class="about-content reveal">
+   <span class="section-tag">ABOUT MAXDENT</span>
+   <h2>Maxdent Maxillofacial & Dental Clinic</h2>
+   <p>At <strong>Maxdent Maxillofacial & Dental Clinic</strong>, we are committed to delivering high-quality dental and maxillofacial care using modern technology and evidence-based treatment. Our goal is to provide safe, painless, and personalized dental solutions in a friendly environment.</p>
+   <p>Whether you need a routine dental check-up, Root Canal Treatment, Dental Implant, Oral & Maxillofacial Surgery, or emergency dental care, our experienced team focuses on clear communication and patient-centered care.</p>
+   <div class="about-features">
+    <div class="feature"><i class="fa-solid fa-check"></i>Modern Dental Equipment</div>
+    <div class="feature"><i class="fa-solid fa-check"></i>Experienced Team</div>
+    <div class="feature"><i class="fa-solid fa-check"></i>Painless Procedures</div>
+    <div class="feature"><i class="fa-solid fa-check"></i>Patient-Centered Care</div>
+    <div class="feature"><i class="fa-solid fa-check"></i>Advanced Sterilization</div>
+    <div class="feature"><i class="fa-solid fa-check"></i>Transparent Treatment Plans</div>
+   </div>
+   <a href="#appointment" class="btn-primary">Book Your Appointment</a>
+  </div>
+ </div>
+</section>
 
-<div class="container about-wrapper">
-
-<div class="about-image">
-
-<img src="about.jpg" alt="Maxdent Clinic">
-
-</div>
-
-<div class="about-content">
-
-<span class="section-tag">
-
-ABOUT MAXDENT
-
-</span>
-
-<h2>
-
-Maxdent Maxillofacial & Dental Clinic
-
-</h2>
-
-<p>
-
-At <strong>Maxdent Maxillofacial & Dental Clinic</strong>, we are committed to delivering high-quality dental and maxillofacial care using modern technology and evidence-based treatment. Our goal is to provide safe, painless, and personalized dental solutions in a friendly environment.
-
-</p>
-
-<p>
-
-Whether you need a routine dental check-up, Root Canal Treatment, Dental Implant, Oral & Maxillofacial Surgery, or emergency dental care, our experienced team ensures that every patient receives the best possible treatment with complete transparency and compassion.
-
-</p>
-
-<div class="about-features">
-
-<div class="feature">
-
-<i class="fa-solid fa-check"></i>
-
-<span>Modern Dental Equipment</span>
-
-</div>
-
-<div class="feature">
-
-<i class="fa-solid fa-check"></i>
-
-<span>Highly Experienced Team</span>
-
-</div>
-
-<div class="feature">
-
-<i class="fa-solid fa-check"></i>
-
-<span>Painless Dental Procedures</span>
-
-</div>
-
-<div class="feature">
-
-<i class="fa-solid fa-check"></i>
-
-<span>Patient-Centered Care</span>
-
-</div>
-
-<div class="feature">
-
-<i class="fa-solid fa-check"></i>
-
-<span>Advanced Sterilization Standards</span>
-
-</div>
-
-<div class="feature">
-
-<i class="fa-solid fa-check"></i>
-
-<span>Affordable Treatment Plans</span>
-
-</div>
-
-</div>
-
-<a href="#appointment" class="btn-primary">
-
-Book Your Appointment
-
-</a>
-
-</div>
-
-</div>
-
-</section> <!--====================================
-WHY CHOOSE US
-=====================================-->
+<section class="doctors" id="doctors">
+ <div class="container">
+  <div class="section-title">
+   <span>MEET OUR DOCTORS</span><h2>Experienced Specialists, Patient-Centered Care</h2>
+   <p>Meet the doctors associated with Maxdent's dental and pediatric care.</p>
+  </div>
+  <div class="doctor-grid">
+   <article class="doctor-card reveal">
+    <div class="doctor-photo"><img src="dr1.jpeg" alt="Dr. Satyajit Chatterjee"></div>
+    <div>
+     <h3>Dr. Satyajit Chatterjee</h3>
+     <div class="doctor-qualification">MBBS, DCH, MD (Paediatrics)</div>
+     <div class="doctor-role">Retd. Sr. Pediatrician<br>Divisional Railway Hospital, Ajmer</div>
+     <div class="doctor-address"><i class="fa-solid fa-location-dot"></i>A-134, Chandravardai Nagar, Ajmer</div>
+    </div>
+   </article>
+   <article class="doctor-card reveal">
+    <div class="doctor-photo"><img src="dr2.jpeg" alt="Dr. Abhirup Chatterjee"></div>
+    <div>
+     <h3>Dr. Abhirup Chatterjee</h3>
+     <div class="doctor-qualification">B.D.S., M.D.S., F.A.G.E.</div>
+     <div class="doctor-role">Maxillofacial Surgeon</div>
+     <div class="doctor-address"><i class="fa-solid fa-location-dot"></i>Near Baba Diagnostics, opposite JLN Medical College, Kala Bagh, Ajmer, Rajasthan 305001, India</div>
+    </div>
+   </article>
+  </div>
+ </div>
+</section>
 
 <section class="why-us">
-
-<div class="container">
-
-<div class="section-title">
-
-<span>WHY CHOOSE MAXDENT</span>
-
-<h2>Why Patients Trust Us</h2>
-
-<p>
-
-We combine advanced dental technology with compassionate care to provide
-safe, painless and high-quality treatment for every patient.
-
-</p>
-
-</div>
-
-<div class="why-grid">
-
-<div class="why-card">
-
-<i class="fa-solid fa-user-doctor"></i>
-
-<h3>Experienced Dentists</h3>
-
-<p>Qualified professionals with years of clinical experience.</p>
-
-</div>
-
-<div class="why-card">
-
-<i class="fa-solid fa-microscope"></i>
-
-<h3>Modern Equipment</h3>
-
-<p>Advanced dental technology for accurate diagnosis and treatment.</p>
-
-</div>
-
-<div class="why-card">
-
-<i class="fa-solid fa-heart-circle-check"></i>
-
-<h3>Patient First Care</h3>
-
-<p>Comfortable, painless and personalized dental solutions.</p>
-
-</div>
-
-<div class="why-card">
-
-<i class="fa-solid fa-shield-heart"></i>
-
-<h3>Complete Sterilization</h3>
-
-<p>Strict infection control and international hygiene standards.</p>
-
-</div>
-
-<div class="why-card">
-
-<i class="fa-solid fa-clock"></i>
-
-<h3>Emergency Care</h3>
-
-<p>Quick response for dental pain and emergency cases.</p>
-
-</div>
-
-<div class="why-card">
-
-<i class="fa-solid fa-indian-rupee-sign"></i>
-
-<h3>Affordable Treatment</h3>
-
-<p>Transparent pricing without compromising quality.</p>
-
-</div>
-
-</div>
-
-</div>
-
+ <div class="container">
+  <div class="section-title"><span>WHY CHOOSE MAXDENT</span><h2>Why Patients Trust Us</h2><p>We combine advanced technology with compassionate care for dental and maxillofacial treatment.</p></div>
+  <div class="why-grid">
+   <div class="why-card reveal"><i class="fa-solid fa-user-doctor"></i><h3>Experienced Doctors</h3><p>Qualified professionals focused on personalized clinical care.</p></div>
+   <div class="why-card reveal"><i class="fa-solid fa-microscope"></i><h3>Modern Equipment</h3><p>Technology-assisted diagnosis and treatment planning.</p></div>
+   <div class="why-card reveal"><i class="fa-solid fa-heart-circle-check"></i><h3>Patient First Care</h3><p>Comfortable, transparent and supportive treatment experience.</p></div>
+   <div class="why-card reveal"><i class="fa-solid fa-shield-heart"></i><h3>Hygiene & Sterilization</h3><p>Focused infection-control and sterilization practices.</p></div>
+   <div class="why-card reveal"><i class="fa-solid fa-clock"></i><h3>Emergency Support</h3><p>Prompt attention for dental pain, trauma and urgent cases.</p></div>
+   <div class="why-card reveal"><i class="fa-solid fa-indian-rupee-sign"></i><h3>Clear Treatment Plans</h3><p>Understand your treatment options before proceeding.</p></div>
+  </div>
+ </div>
 </section>
-
-<!--====================================
-OUR TREATMENTS
-=====================================-->
 
 <section class="treatments" id="treatments">
-
-<div class="container">
-
-<div class="section-title">
-
-<span>OUR TREATMENTS</span>
-
-<h2>Complete Dental Care Under One Roof</h2>
-
-<p>
-
-We offer advanced dental and maxillofacial treatments using modern
-technology and patient-focused care.
-
-</p>
-
-</div>
-
-<div class="treatment-grid">
-
-<div class="treatment-card">
-
-<i class="fa-solid fa-tooth"></i>
-
-<h3>Root Canal Treatment (RCT)</h3>
-
-<p>Save infected teeth with painless root canal procedures.</p>
-
-</div>
-
-<div class="treatment-card">
-
-<i class="fa-solid fa-screwdriver-wrench"></i>
-
-<h3>Dental Implants</h3>
-
-<p>Permanent solution for missing teeth with natural appearance.</p>
-
-</div>
-
-<div class="treatment-card">
-
-<i class="fa-solid fa-user-doctor"></i>
-
-<h3>Oral & Maxillofacial Surgery</h3>
-
-<p>Advanced surgical care by experienced specialists.</p>
-
-</div>
-
-<div class="treatment-card">
-
-<i class="fa-solid fa-face-smile"></i>
-
-<h3>Smile Designing</h3>
-
-<p>Improve your smile with cosmetic dental procedures.</p>
-
-</div>
-
-<div class="treatment-card">
-
-<i class="fa-solid fa-teeth-open"></i>
-
-<h3>Maxillofacial Prosthetics</h3>
-
-<p>Custom prosthetic rehabilitation for oral and facial defects.</p>
-
-</div>
-
-<div class="treatment-card">
-
-<i class="fa-solid fa-truck-medical"></i>
-
-<h3>Emergency Dental Care</h3>
-
-<p>Immediate treatment for dental pain, trauma and emergencies.</p>
-
-</div>
-
-<div class="treatment-card">
-
-<i class="fa-solid fa-child"></i>
-
-<h3>Children's Dentistry</h3>
-
-<p>Gentle and comfortable dental care specially for kids.</p>
-
-</div>
-
-<div class="treatment-card">
-
-<i class="fa-solid fa-shield-virus"></i>
-
-<h3>Preventive Dentistry</h3>
-
-<p>Regular checkups, cleaning and oral health maintenance.</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section> <!--====================================
-PATIENT REVIEWS
-=====================================-->
+ <div class="container">
+  <div class="section-title"><span>OUR TREATMENTS</span><h2>Advanced Dental & Maxillofacial Care</h2><p>Comprehensive treatment options for dental, facial and maxillofacial conditions.</p></div>
+  <div class="treatment-grid">
+   <div class="treatment-card reveal"><div class="treatment-img"><img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=900&q=80" alt="Jaw and facial surgery"></div><div class="treatment-body"><i class="fa-solid fa-skull"></i><h3>Fracture of Jaws & Face</h3><p>Evaluation and surgical management of facial and jaw fractures.</p></div></div>
+   <div class="treatment-card reveal"><div class="treatment-img"><img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=900&q=80" alt="Oral cancer care"></div><div class="treatment-body"><i class="fa-solid fa-ribbon"></i><h3>Oral Cancer Detection & Rehabilitation</h3><p>Clinical assessment, diagnosis support and rehabilitation planning.</p></div></div>
+   <div class="treatment-card reveal"><div class="treatment-img"><img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=80" alt="Cyst and tumor treatment"></div><div class="treatment-body"><i class="fa-solid fa-circle-nodes"></i><h3>Cysts & Tumors of Jaws</h3><p>Assessment and treatment planning for cystic and tumor conditions.</p></div></div>
+   <div class="treatment-card reveal"><div class="treatment-img"><img src="https://images.unsplash.com/photo-1588776814546-daab30f310ce?auto=format&fit=crop&w=900&q=80" alt="Facial asymmetry"></div><div class="treatment-body"><i class="fa-solid fa-face-smile"></i><h3>Facial Asymmetry Correction</h3><p>Assessment and corrective treatment planning for facial asymmetry.</p></div></div>
+   <div class="treatment-card reveal"><div class="treatment-img"><img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=900&q=80" alt="Dental implants"></div><div class="treatment-body"><i class="fa-solid fa-tooth"></i><h3>Dental Implants</h3><p>Restorative solutions for missing teeth and oral function.</p></div></div>
+   <div class="treatment-card reveal"><div class="treatment-img"><img src="https://images.unsplash.com/photo-1581585099401-3b6b2e0b1c6b?auto=format&fit=crop&w=900&q=80" alt="Root canal"></div><div class="treatment-body"><i class="fa-solid fa-tooth"></i><h3>Root Canal Treatment</h3><p>Modern endodontic care for infected or damaged teeth.</p></div></div>
+   <div class="treatment-card reveal"><div class="treatment-img"><img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=900&q=80" alt="Smile designing"></div><div class="treatment-body"><i class="fa-solid fa-wand-magic-sparkles"></i><h3>Smile Designing</h3><p>Cosmetic treatment planning for a healthier-looking smile.</p></div></div>
+   <div class="treatment-card reveal"><div class="treatment-img"><img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=900&q=80" alt="Emergency dental care"></div><div class="treatment-body"><i class="fa-solid fa-truck-medical"></i><h3>Emergency Dental Care</h3><p>Prompt evaluation for dental pain, trauma and urgent problems.</p></div></div>
+  </div>
+ </div>
+</section>
 
 <section class="reviews" id="reviews">
-
-<div class="container">
-
-<div class="section-title">
-
-<span>PATIENT REVIEWS</span>
-
-<h2>What Our Patients Say</h2>
-
-<p>
-
-The trust of our patients motivates us to provide exceptional dental care every day.
-
-</p>
-
-</div>
-
-<div class="review-grid">
-
-<div class="review-card">
-
-<div class="review-stars">
-
-★★★★★
-
-</div>
-
-<h3>Pooja Mangnani</h3>
-
-<p>
-
-"I got my dental treatment done at Maxdent and had an excellent experience. The doctor explained everything clearly and the staff was very supportive."
-
-</p>
-
-</div>
-
-<div class="review-card">
-
-<div class="review-stars">
-
-★★★★★
-
-</div>
-
-<h3>Muskan Mittal</h3>
-
-<p>
-
-"Very clean clinic with modern facilities. The treatment was painless and I highly recommend Maxdent Dental Clinic."
-
-</p>
-
-</div>
-
-<div class="review-card">
-
-<div class="review-stars">
-
-★★★★★
-
-</div>
-
-<h3>Aditi Sharma</h3>
-
-<p>
-
-"Professional doctors, friendly environment and excellent patient care. One of the best dental clinics in Ajmer."
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
+ <div class="container">
+  <div class="section-title"><span>PATIENT REVIEWS</span><h2>What Our Patients Say</h2><p>The trust of our patients motivates us to provide exceptional care.</p></div>
+  <div class="review-grid">
+   <div class="review-card reveal"><div class="review-stars">★★★★★</div><h3>Pooja Mangnani</h3><p>"I got my dental treatment done at Maxdent and had an excellent experience. The doctor explained everything clearly and the staff was very supportive."</p></div>
+   <div class="review-card reveal"><div class="review-stars">★★★★★</div><h3>Muskan Mittal</h3><p>"Very clean clinic with modern facilities. The treatment was painless and I highly recommend Maxdent Dental Clinic."</p></div>
+   <div class="review-card reveal"><div class="review-stars">★★★★★</div><h3>Aditi Sharma</h3><p>"Professional doctors, friendly environment and excellent patient care. One of the best dental clinics in Ajmer."</p></div>
+  </div>
+ </div>
 </section>
-
-<!--====================================
-APPOINTMENT SECTION
-=====================================-->
 
 <section class="appointment" id="appointment">
-
-<div class="container appointment-wrapper">
-
-<div class="appointment-content">
-
-<span>BOOK APPOINTMENT</span>
-
-<h2>
-
-Schedule Your Dental Visit
-
-</h2>
-
-<p>
-
-Fill in your details below and our team will contact you on WhatsApp to confirm your appointment.
-
-</p>
-
-<ul>
-
-<li><i class="fa-solid fa-circle-check"></i> Instant WhatsApp Confirmation</li>
-
-<li><i class="fa-solid fa-circle-check"></i> Experienced Dental Team</li>
-
-<li><i class="fa-solid fa-circle-check"></i> Advanced Dental Care</li>
-
-<li><i class="fa-solid fa-circle-check"></i> Affordable Consultation</li>
-
-</ul>
-
-</div>
-
-<div class="appointment-form">
-
-<form id="whatsappForm">
-
-<div class="input-group">
-
-<input
-type="text"
-id="name"
-placeholder="Full Name"
-required>
-
-</div>
-
-<div class="input-group">
-
-<input
-type="tel"
-id="phone"
-placeholder="Mobile Number"
-required>
-
-</div>
-
-<div class="input-group">
-
-<input
-type="email"
-id="email"
-placeholder="Email (Optional)">
-
-</div>
-
-<div class="input-group">
-
-<select id="treatment">
-
-<option selected disabled>
-
-Select Treatment
-
-</option>
-
-<option>Root Canal Treatment</option>
-
-<option>Dental Implant</option>
-
-<option>Smile Designing</option>
-
-<option>Oral Surgery</option>
-
-<option>Emergency Dental Care</option>
-
-<option>General Consultation</option>
-
-</select>
-
-</div>
-
-<div class="input-group">
-
-<input
-type="date"
-id="date">
-
-</div>
-
-<div class="input-group">
-
-<textarea
-id="message"
-rows="5"
-placeholder="Write Your Message..."></textarea>
-
-</div>
-
-<button
-type="submit"
-class="btn-primary">
-
-Book Appointment
-
-</button>
-
-</form>
-
-</div>
-
-</div>
-
-</section> <!--====================================
-FAQ SECTION
-=====================================-->
+ <div class="container appointment-wrapper">
+  <div class="appointment-content reveal">
+   <span>BOOK APPOINTMENT</span><h2>Schedule Your Dental Visit</h2>
+   <p>Fill in your details below and our team will contact you on WhatsApp to confirm your appointment.</p>
+   <ul>
+    <li><i class="fa-solid fa-circle-check"></i>Instant WhatsApp Confirmation</li>
+    <li><i class="fa-solid fa-circle-check"></i>Experienced Dental & Maxillofacial Team</li>
+    <li><i class="fa-solid fa-circle-check"></i>Advanced Dental Care</li>
+    <li><i class="fa-solid fa-circle-check"></i>Personalized Treatment Planning</li>
+   </ul>
+  </div>
+  <div class="appointment-form reveal">
+   <form id="whatsappForm">
+    <div class="input-group"><input type="text" id="name" placeholder="Full Name" required></div>
+    <div class="input-group"><input type="tel" id="phone" placeholder="Mobile Number" required></div>
+    <div class="input-group"><input type="email" id="email" placeholder="Email (Optional)"></div>
+    <div class="input-group"><select id="treatment"><option selected disabled>Select Treatment</option><option>Fracture of Jaws & Face</option><option>Oral Cancer Detection & Rehabilitation</option><option>Cysts & Tumors of Jaws</option><option>Facial Asymmetry Correction</option><option>Dental Implant</option><option>Root Canal Treatment</option><option>Smile Designing</option><option>Emergency Dental Care</option><option>General Consultation</option></select></div>
+    <div class="input-group"><input type="date" id="date"></div>
+    <div class="input-group"><textarea id="message" rows="5" placeholder="Write Your Message..."></textarea></div>
+    <button type="submit" class="btn-primary">Book Appointment</button>
+   </form>
+  </div>
+ </div>
+</section>
 
 <section class="faq" id="faq">
-
-<div class="container">
-
-<div class="section-title">
-
-<span>FAQ</span>
-
-<h2>Frequently Asked Questions</h2>
-
-<p>
-Find answers to the most common questions about our dental treatments.
-</p>
-
-</div>
-
-<div class="faq-container">
-
-<div class="faq-item">
-
-<button class="faq-question">
-Is Root Canal Treatment Painful?
-<i class="fas fa-plus"></i>
-</button>
-
-<div class="faq-answer">
-<p>
-No. With modern anesthesia and advanced techniques, Root Canal Treatment is almost painless.
-</p>
-</div>
-
-</div>
-
-<div class="faq-item">
-
-<button class="faq-question">
-Do I Need An Appointment?
-<i class="fas fa-plus"></i>
-</button>
-
-<div class="faq-answer">
-<p>
-Appointments are recommended to reduce waiting time, but walk-in patients are also welcome.
-</p>
-</div>
-
-</div>
-
-<div class="faq-item">
-
-<button class="faq-question">
-Do You Provide Emergency Dental Care?
-<i class="fas fa-plus"></i>
-</button>
-
-<div class="faq-answer">
-<p>
-Yes. We provide emergency dental treatment for severe pain, swelling, trauma and other urgent conditions.
-</p>
-</div>
-
-</div>
-
-<div class="faq-item">
-
-<button class="faq-question">
-Where Is Your Clinic Located?
-<i class="fas fa-plus"></i>
-</button>
-
-<div class="faq-answer">
-<p>
-House No. A1/34, Chanderverdai Nagar, Ajmer, Rajasthan - 305003.
-</p>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
+ <div class="container">
+  <div class="section-title"><span>FAQ</span><h2>Frequently Asked Questions</h2><p>Find answers to common questions about dental and maxillofacial care.</p></div>
+  <div class="faq-container">
+   <div class="faq-item"><button class="faq-question">Is Root Canal Treatment Painful?<i class="fas fa-plus"></i></button><div class="faq-answer"><p>With modern anesthesia and techniques, root canal treatment is generally performed with pain control and patient comfort in mind.</p></div></div>
+   <div class="faq-item"><button class="faq-question">Do I Need An Appointment?<i class="fas fa-plus"></i></button><div class="faq-answer"><p>Appointments are recommended to reduce waiting time. For urgent cases, contact the clinic directly.</p></div></div>
+   <div class="faq-item"><button class="faq-question">Do You Provide Emergency Dental Care?<i class="fas fa-plus"></i></button><div class="faq-answer"><p>Yes. Contact the clinic for urgent dental pain, trauma or other emergency concerns.</p></div></div>
+   <div class="faq-item"><button class="faq-question">Where Are The Doctors Located?<i class="fas fa-plus"></i></button><div class="faq-answer"><p>Dr. Satyajit Chatterjee consults at A-134, Chandravardai Nagar, Ajmer. Dr. Abhirup Chatterjee is near Baba Diagnostics, opposite JLN Medical College, Kala Bagh, Ajmer, Rajasthan 305001.</p></div></div>
+  </div>
+ </div>
 </section>
 
-<!--====================================
-CONTACT
-=====================================-->
+<section class="gallery" id="gallery">
+ <div class="container">
+  <div class="section-title"><span>OUR CLINIC</span><h2>Inside Maxdent</h2><p>A visual look at our clinic spaces and facilities.</p></div>
+  <div class="gallery-grid">
+   <div class="gallery-item reveal"><img src="c1.jpeg" alt="Maxdent Clinic 1"></div>
+   <div class="gallery-item reveal"><img src="c2.jpeg" alt="Maxdent Clinic 2"></div>
+   <div class="gallery-item reveal"><img src="c3.jpeg" alt="Maxdent Clinic 3"></div>
+   <div class="gallery-item reveal"><img src="c4.jpeg" alt="Maxdent Clinic 4"></div>
+   <div class="gallery-item reveal"><img src="c5.jpeg" alt="Maxdent Clinic 5"></div>
+   <div class="gallery-item reveal"><img src="c6.jpeg" alt="Maxdent Clinic 6"></div>
+  </div>
+ </div>
+</section>
+
+<section class="before-after" id="before-after">
+ <div class="container">
+  <div class="section-title"><span>BEFORE & AFTER</span><h2>Treatment Transformation Gallery</h2><p>Swipe or use the arrows to view the before-and-after image pairs.</p></div>
+  <div class="slider-shell">
+   <button class="slider-btn left" id="baLeft" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+   <div class="ba-track" id="baTrack">
+    <div class="ba-card"><div class="ba-images"><img src="a1.png" alt="Before 1"><img src="a2.png" alt="After 1"></div><div class="ba-labels"><div>BEFORE</div><div>AFTER</div></div></div>
+    <div class="ba-card"><div class="ba-images"><img src="a3.png" alt="Before 2"><img src="a4.png" alt="After 2"></div><div class="ba-labels"><div>BEFORE</div><div>AFTER</div></div></div>
+    <div class="ba-card"><div class="ba-images"><img src="a5.png" alt="Before 3"><img src="a6.png" alt="After 3"></div><div class="ba-labels"><div>BEFORE</div><div>AFTER</div></div></div>
+   </div>
+   <button class="slider-btn right" id="baRight" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+ </div>
+</section>
 
 <section class="contact" id="contact">
-
-<div class="container">
-
-<div class="section-title">
-
-<span>CONTACT US</span>
-
-<h2>Visit Maxdent Dental Clinic</h2>
-
-</div>
-
-<div class="contact-grid">
-
-<div class="contact-card">
-
-<i class="fas fa-location-dot"></i>
-
-<h3>Address</h3>
-
-<p>
-
-House No. A1/34,<br>
-
-Chanderverdai Nagar,<br>
-
-Ajmer - 305003
-
-</p>
-
-</div>
-
-<div class="contact-card">
-
-<i class="fas fa-phone"></i>
-
-<h3>Call Us</h3>
-
-<a href="tel:8949053447">
-
-8949053447
-
-</a>
-
-</div>
-
-<div class="contact-card">
-
-<i class="fab fa-whatsapp"></i>
-
-<h3>WhatsApp</h3>
-
-<a href="https://wa.me/918949053447" target="_blank">
-
-Chat Now
-
-</a>
-
-</div>
-
-<div class="contact-card">
-
-<i class="fas fa-clock"></i>
-
-<h3>Clinic Timing</h3>
-
-<p>
-
-Monday - Saturday
-
-<br>
-
-9:00 AM - 8:00 PM
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
+ <div class="container">
+  <div class="section-title"><span>CONTACT US</span><h2>Visit Maxdent Dental Clinic</h2></div>
+  <div class="contact-grid">
+   <div class="contact-card reveal"><i class="fas fa-phone"></i><h3>Call Us</h3><a href="tel:8949053447">8949053447</a></div>
+   <div class="contact-card reveal"><i class="fab fa-whatsapp"></i><h3>WhatsApp</h3><a href="https://wa.me/918949053447" target="_blank">Chat Now</a></div>
+   <div class="contact-card reveal"><i class="fas fa-envelope"></i><h3>Email</h3><a href="mailto:dr.abhi.maxfac@gmail.com">Send Email</a></div>
+   <div class="contact-card reveal"><i class="fab fa-instagram"></i><h3>Instagram</h3><a href="https://www.instagram.com/maxdent_hosp_ajmer/" target="_blank">Follow Us</a></div>
+  </div>
+  <div class="clinic-addresses">
+   <div class="address-box reveal"><h3>Dr. Satyajit Chatterjee</h3><p><i class="fa-solid fa-location-dot"></i> A-134, Chandravardai Nagar, Ajmer</p></div>
+   <div class="address-box reveal"><h3>Dr. Abhirup Chatterjee</h3><p><i class="fa-solid fa-location-dot"></i> Near Baba Diagnostics, opposite JLN Medical College, Kala Bagh, Ajmer, Rajasthan 305001, India</p></div>
+  </div>
+ </div>
 </section>
-
-<!--====================================
-EMERGENCY CTA
-=====================================-->
 
 <section class="emergency">
-
-<div class="container">
-
-<h2>
-
-Need Emergency Dental Care?
-
-</h2>
-
-<p>
-
-Call us now for immediate assistance and book your appointment instantly.
-
-</p>
-
-<div class="hero-buttons">
-
-<a href="tel:8949053447" class="btn-primary">
-
-Call Now
-
-</a>
-
-<a href="https://wa.me/918949053447" target="_blank" class="btn-secondary">
-
-WhatsApp
-
-</a>
-
-</div>
-
-</div>
-
+ <div class="container">
+  <h2>Need Emergency Dental Care?</h2>
+  <p>Call us now for immediate assistance and appointment guidance.</p>
+  <div class="hero-buttons">
+   <a href="tel:8949053447" class="btn-primary">Call Now</a>
+   <a href="https://wa.me/918949053447" target="_blank" class="btn-secondary">WhatsApp</a>
+  </div>
+ </div>
 </section>
 
-<!--====================================
-FOOTER
-=====================================-->
-
 <footer>
-
-<div class="container footer-grid">
-
-<div>
-
-<h2>MAXDENT</h2>
-
-<p>
-
-Maxillofacial & Dental Clinic
-
-</p>
-
-<p>
-
-Healthy Smiles Begin Here.
-
-</p>
-
-</div>
-
-<div>
-
-<h3>Quick Links</h3>
-
-<ul>
-
-<li><a href="#home">Home</a></li>
-
-<li><a href="#about">About</a></li>
-
-<li><a href="#treatments">Treatments</a></li>
-
-<li><a href="#reviews">Reviews</a></li>
-
-<li><a href="#contact">Contact</a></li>
-
-</ul>
-
-</div>
-
-<div>
-
-<h3>Contact</h3>
-
-<p>📞 8949053447</p>
-
-<p>📍 Ajmer, Rajasthan</p>
-
-<p>💬 WhatsApp Available</p>
-
-</div>
-
-</div>
-
-<div class="copyright">
-
-<p>
-
-© <span id="year"></span>
-
-Maxdent Maxillofacial & Dental Clinic.
-
-All Rights Reserved.
-
-</p>
-
-<p>
-
-Designed & Developed By
-
-<strong>Marwar Infotech</strong>
-
-</p>
-
-</div>
-
+ <div class="container footer-grid">
+  <div><h2>MAXDENT</h2><p>Maxillofacial & Dental Clinic</p><p>Healthy Smiles Begin Here.</p></div>
+  <div><h3>Quick Links</h3><ul><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#doctors">Doctors</a></li><li><a href="#treatments">Treatments</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#contact">Contact</a></li></ul></div>
+  <div><h3>Contact</h3><p>📞 8949053447</p><p>💬 WhatsApp Available</p><p>✉ dr.abhi.maxfac@gmail.com</p></div>
+  <div><h3>Connect</h3><a class="social-link" href="https://www.instagram.com/maxdent_hosp_ajmer/" target="_blank"><i class="fab fa-instagram"></i> @maxdent_hosp_ajmer</a></div>
+ </div>
+ <div class="copyright">
+  <p>© <span id="year"></span> Maxdent Maxillofacial & Dental Clinic. All Rights Reserved.</p>
+  <p>Designed & Developed By <strong>Marwar Infotech</strong></p>
+ </div>
 </footer>
 
-<!--=========================
-FLOATING BUTTONS
-==========================-->
+<a href="https://wa.me/918949053447" class="whatsapp-float" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+<a href="tel:8949053447" class="call-float" aria-label="Call"><i class="fas fa-phone"></i></a>
+<button id="scrollTop" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
 
-<a href="https://wa.me/918949053447"
+<script>
+const menuBtn=document.querySelector(".menu-btn");
+const navLinks=document.querySelector(".nav-links");
+if(menuBtn){
+ menuBtn.addEventListener("click",()=>{
+  navLinks.classList.toggle("active");
+  menuBtn.innerHTML=navLinks.classList.contains("active")?'<i class="fas fa-times"></i>':'<i class="fas fa-bars"></i>';
+ });
+}
+document.querySelectorAll(".nav-links a").forEach(link=>{
+ link.addEventListener("click",()=>{
+  navLinks.classList.remove("active");
+  if(menuBtn) menuBtn.innerHTML='<i class="fas fa-bars"></i>';
+ });
+});
 
-class="whatsapp-float"
+const scrollBtn=document.getElementById("scrollTop");
+window.addEventListener("scroll",()=>{
+ scrollBtn.classList.toggle("show",window.scrollY>400);
+});
+scrollBtn.addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
 
-target="_blank">
+document.querySelectorAll(".faq-question").forEach(question=>{
+ question.addEventListener("click",()=>{
+  const answer=question.nextElementSibling;
+  const icon=question.querySelector("i");
+  document.querySelectorAll(".faq-answer").forEach(box=>{
+   if(box!==answer){
+    box.style.maxHeight=null;
+    const otherIcon=box.previousElementSibling.querySelector("i");
+    otherIcon.classList.remove("fa-minus");otherIcon.classList.add("fa-plus");
+   }
+  });
+  if(answer.style.maxHeight){
+   answer.style.maxHeight=null;icon.classList.remove("fa-minus");icon.classList.add("fa-plus");
+  }else{
+   answer.style.maxHeight=answer.scrollHeight+"px";icon.classList.remove("fa-plus");icon.classList.add("fa-minus");
+  }
+ });
+});
 
-<i class="fab fa-whatsapp"></i>
+const sections=document.querySelectorAll("section[id]");
+const navItems=document.querySelectorAll(".nav-links a");
+window.addEventListener("scroll",()=>{
+ let current="";
+ sections.forEach(section=>{
+  if(window.scrollY>=section.offsetTop-150) current=section.id;
+ });
+ navItems.forEach(link=>link.classList.toggle("active",link.getAttribute("href")==="#"+current));
+});
 
-</a>
+const form=document.getElementById("whatsappForm");
+if(form){
+ form.addEventListener("submit",e=>{
+  e.preventDefault();
+  const name=document.getElementById("name").value.trim();
+  const phone=document.getElementById("phone").value.trim();
+  const email=document.getElementById("email").value.trim();
+  const treatment=document.getElementById("treatment").value;
+  const date=document.getElementById("date").value;
+  const message=document.getElementById("message").value.trim();
+  if(!name||!phone){alert("Please enter your Name and Mobile Number.");return;}
+  const whatsappMessage=`🦷 *New Appointment Request*\n\n👤 Name : ${name}\n📞 Mobile : ${phone}\n📧 Email : ${email}\n🦷 Treatment : ${treatment}\n📅 Preferred Date : ${date}\n📝 Message : ${message}\n\nPlease confirm my appointment.`;
+  window.open("https://wa.me/918949053447?text="+encodeURIComponent(whatsappMessage),"_blank");
+  form.reset();
+ });
+}
 
-<a href="tel:8949053447"
+const observer=new IntersectionObserver(entries=>{
+ entries.forEach(entry=>{if(entry.isIntersecting) entry.target.classList.add("show");});
+},{threshold:.12});
+document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
 
-class="call-float">
+const baTrack=document.getElementById("baTrack");
+document.getElementById("baLeft").addEventListener("click",()=>baTrack.scrollBy({left:-baTrack.clientWidth*.75,behavior:"smooth"}));
+document.getElementById("baRight").addEventListener("click",()=>baTrack.scrollBy({left:baTrack.clientWidth*.75,behavior:"smooth"}));
 
-<i class="fas fa-phone"></i>
-
-</a>
-
-<button id="scrollTop">
-
-<i class="fas fa-arrow-up"></i>
-
-</button>
-
-<script src="script.js"></script>
-
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
 </body>
-
-</html> 
+</html>
