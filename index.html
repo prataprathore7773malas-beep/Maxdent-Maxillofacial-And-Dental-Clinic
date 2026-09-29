@@ -33,7 +33,7 @@ header{position:sticky;top:0;left:0;width:100%;z-index:1000;background:rgba(255,
 .why-us{background:#fff}.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}.why-card{padding:32px 25px;text-align:center;border-radius:20px;box-shadow:var(--shadow);border:1px solid var(--border);transition:.35s}.why-card:hover{transform:translateY(-10px);border-color:#8EC7E2}.why-card i,.treatment-body>i{width:76px;height:76px;margin:auto;display:flex;align-items:center;justify-content:center;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;font-size:29px;margin-bottom:18px}
 .treatments{background:var(--bg)}.treatment-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}.treatment-card{background:#fff;border-radius:22px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--border);transition:.35s}.treatment-card:hover{transform:translateY(-9px)}.treatment-image{height:205px;overflow:hidden}.treatment-image img{height:100%;object-fit:cover;transition:.5s}.treatment-card:hover .treatment-image img{transform:scale(1.06)}.treatment-body{padding:25px;text-align:center}.treatment-body>i{width:58px;height:58px;font-size:22px;margin-top:-53px;position:relative;border:4px solid #fff}.treatment-body h3{font-size:20px;color:var(--primary);margin:5px 0 9px}.treatment-body p{font-size:14px}
 .clinic-gallery{background:#fff}.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.gallery-item{padding:0;border:0;border-radius:20px;overflow:hidden;background:#fff;cursor:pointer;box-shadow:var(--shadow);height:280px}.gallery-item img{height:100%;object-fit:cover;transition:.5s}.gallery-item:hover img{transform:scale(1.06)}
-.before-after{background:var(--bg)}.ba-slider{position:relative;max-width:1100px;margin:auto;display:flex;align-items:center;gap:15px}.ba-track{flex:1;overflow:hidden;border-radius:25px;background:#fff;box-shadow:var(--shadow);min-height:480px}.ba-slide{display:none;width:100%;height:480px}.ba-slide.active{display:block}.ba-slide img{width:100%;height:100%;object-fit:contain;background:#fff}.ba-arrow{width:55px;height:55px;min-width:55px;border:0;border-radius:50%;background:var(--primary);color:#fff;font-size:20px;cursor:pointer;box-shadow:var(--shadow);transition:.3s}.ba-arrow:hover{transform:scale(1.08);background:var(--secondary)}.ba-dots{text-align:center;margin-top:20px}.ba-dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:#BCD1DE;margin:0 5px;cursor:pointer}.ba-dot.active{background:var(--primary)}
+.before-after{background:var(--bg)}.ba-slider{position:relative;max-width:1200px;margin:auto;display:flex;align-items:center;gap:14px}.ba-track{flex:1;overflow:hidden;border-radius:22px}.ba-slides{display:flex;gap:20px;transition:transform .55s ease}.ba-slide{flex:0 0 calc((100% - 60px)/4);height:330px;background:#fff;border-radius:20px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--border)}.ba-slide img{width:100%;height:100%;object-fit:cover;background:#fff}.ba-arrow{width:52px;height:52px;min-width:52px;border:0;border-radius:50%;background:var(--primary);color:#fff;font-size:19px;cursor:pointer;box-shadow:var(--shadow);transition:.3s;z-index:2}.ba-arrow:hover{transform:scale(1.08);background:var(--secondary)}.ba-dots{text-align:center;margin-top:22px}.ba-dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:#BCD1DE;margin:0 5px;cursor:pointer;border:0}.ba-dot.active{background:var(--primary)}.ba-controls{text-align:center;margin-top:24px}.ba-more{display:inline-flex;align-items:center;gap:9px;padding:13px 24px;border:0;border-radius:50px;background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;font:600 15px Poppins,sans-serif;cursor:pointer;box-shadow:var(--shadow);transition:.3s}.ba-more:hover{transform:translateY(-4px)}
 .reviews{background:#fff}.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}.review-card{padding:32px;background:#fff;border:1px solid var(--border);border-radius:20px;box-shadow:var(--shadow)}.review-stars{color:#F5B400;font-size:21px;margin-bottom:12px}.review-card h3{color:var(--primary);margin-bottom:12px}
 .appointment{background:#F1F7FB}.appointment-wrapper{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.appointment-content h2{margin-bottom:18px}.appointment-content p{margin-bottom:25px}.appointment-content ul li{margin:13px 0;font-weight:500}.appointment-content li i{color:var(--secondary);margin-right:9px}.appointment-form{background:#fff;padding:38px;border-radius:22px;box-shadow:var(--shadow)}.input-group{margin-bottom:17px}.input-group input,.input-group textarea,.input-group select{width:100%;padding:14px 17px;border:1px solid var(--border);border-radius:12px;font:inherit;outline:none;transition:.3s}.input-group input:focus,.input-group textarea:focus,.input-group select:focus{border-color:var(--secondary);box-shadow:0 0 0 3px rgba(10,110,168,.08)}.input-group textarea{resize:vertical}.appointment-form button{width:100%;border:0}
 .faq{background:#fff}.faq-container{max-width:900px;margin:auto}.faq-item{background:#fff;border-radius:17px;box-shadow:var(--shadow);margin-bottom:18px;overflow:hidden;border:1px solid var(--border)}.faq-question{width:100%;padding:20px 23px;display:flex;justify-content:space-between;align-items:center;border:0;background:#fff;font-size:17px;font-weight:600;cursor:pointer;color:var(--dark);text-align:left}.faq-question i{color:var(--secondary);transition:.3s}.faq-answer{max-height:0;overflow:hidden;transition:.4s}.faq-answer p{padding:0 23px 22px}
@@ -43,8 +43,8 @@ footer{background:#061A2C;padding:75px 6% 25px;color:#fff}.footer-grid{display:g
 .reveal{opacity:0;transform:translateY(45px);transition:all .8s ease}.reveal.visible{opacity:1;transform:none}
 @media(max-width:1100px){.nav-links{gap:14px}.nav-links a{font-size:13px}.trust-grid{grid-template-columns:repeat(2,1fr)}.why-grid,.treatment-grid{grid-template-columns:repeat(2,1fr)}.review-grid{grid-template-columns:repeat(2,1fr)}.clinic-address-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:900px){.hero-wrapper,.about-wrapper,.appointment-wrapper{grid-template-columns:1fr}.hero{text-align:center}.hero p{margin-left:auto;margin-right:auto}.hero-buttons,.hero-stats{justify-content:center}.hero-side{margin-top:20px}.doctor-grid{grid-template-columns:1fr}.doctor-photo{min-height:430px}}
-@media(max-width:768px){section{padding:70px 6%}.top-inner{flex-direction:column;gap:5px;text-align:center}.top-left,.top-right{justify-content:center;flex-wrap:wrap;gap:12px}.navbar{padding:11px 6%}.nav-btn{display:none}.menu-btn{display:block}.nav-links{position:fixed;top:78px;left:-100%;width:100%;background:#fff;flex-direction:column;padding:25px 30px;gap:17px;transition:.35s;box-shadow:0 15px 35px rgba(0,0,0,.09)}.nav-links.active{left:0}.hero{min-height:760px;padding:85px 6%}.hero h1{font-size:42px}.hero-side{display:none}.trust-grid,.why-grid,.treatment-grid,.review-grid,.gallery-grid,.clinic-address-grid{grid-template-columns:1fr}.about-features{grid-template-columns:1fr}.doctor-card{grid-template-columns:1fr}.doctor-photo{height:360px;min-height:0}.appointment-form{padding:25px}.ba-slider{gap:8px}.ba-track{min-height:300px}.ba-slide{height:300px}.ba-arrow{width:45px;height:45px;min-width:45px}.emergency h2{font-size:31px}.footer-grid{grid-template-columns:1fr;text-align:center}.whatsapp-float,.call-float,#scrollTop{width:54px;height:54px;font-size:21px}.whatsapp-float{right:15px;bottom:15px}.call-float{right:15px;bottom:80px}#scrollTop{left:15px;bottom:15px}}
-@media(max-width:480px){h2{font-size:29px}.hero h1{font-size:34px}.section-title{margin-bottom:40px}.doctor-content{padding:25px}.doctor-content h3{font-size:23px}.treatment-image{height:190px}}
+@media(max-width:768px){section{padding:70px 6%}.top-inner{flex-direction:column;gap:5px;text-align:center}.top-left,.top-right{justify-content:center;flex-wrap:wrap;gap:12px}.navbar{padding:11px 6%}.nav-btn{display:none}.menu-btn{display:block}.nav-links{position:fixed;top:78px;left:-100%;width:100%;background:#fff;flex-direction:column;padding:25px 30px;gap:17px;transition:.35s;box-shadow:0 15px 35px rgba(0,0,0,.09)}.nav-links.active{left:0}.hero{min-height:760px;padding:85px 6%}.hero h1{font-size:42px}.hero-side{display:none}.trust-grid,.why-grid,.treatment-grid,.review-grid,.gallery-grid,.clinic-address-grid{grid-template-columns:1fr}.about-features{grid-template-columns:1fr}.doctor-card{grid-template-columns:1fr}.doctor-photo{height:360px;min-height:0}.appointment-form{padding:25px}.ba-slider{gap:8px}.ba-track{min-height:0}.ba-slides{gap:12px}.ba-slide{flex:0 0 calc((100% - 12px)/2);height:260px}.ba-arrow{width:45px;height:45px;min-width:45px}.emergency h2{font-size:31px}.footer-grid{grid-template-columns:1fr;text-align:center}.whatsapp-float,.call-float,#scrollTop{width:54px;height:54px;font-size:21px}.whatsapp-float{right:15px;bottom:15px}.call-float{right:15px;bottom:80px}#scrollTop{left:15px;bottom:15px}}
+@media(max-width:480px){.ba-slide{flex:0 0 100%;height:300px}h2{font-size:29px}.hero h1{font-size:34px}.section-title{margin-bottom:40px}.doctor-content{padding:25px}.doctor-content h3{font-size:23px}.treatment-image{height:190px}}
 
 </style>
 </head>
@@ -203,47 +203,47 @@ footer{background:#061A2C;padding:75px 6% 25px;color:#fff}.footer-grid{display:g
   </article>
 
   <article class="treatment-card">
-    <div class="treatment-image"><img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=900&q=85" alt="Dental implant treatment"></div>
+    <div class="treatment-image"><img src="https://images.unsplash.com/photo-1550831107-1553da8c8464?auto=format&fit=crop&w=900&q=85" alt="Dental implant treatment"></div>
     <div class="treatment-body"><i class="fa-solid fa-screwdriver-wrench"></i><h3>Dental Implants</h3><p>Restorative solutions for missing teeth with a focus on function and appearance.</p></div>
   </article>
 
   <article class="treatment-card">
-    <div class="treatment-image"><img src="https://images.unsplash.com/photo-1550831107-1553da8c8464?auto=format&fit=crop&w=900&q=85" alt="Jaw and facial surgery consultation"></div>
+    <div class="treatment-image"><img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=900&q=85" alt="Jaw and facial surgery consultation"></div>
     <div class="treatment-body"><i class="fa-solid fa-skull-crossbones"></i><h3>Fracture of Jaws & Face</h3><p>Evaluation and surgical management of facial and jaw trauma.</p></div>
   </article>
 
   <article class="treatment-card">
-    <div class="treatment-image"><img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=85" alt="Oral cancer detection and care"></div>
+    <div class="treatment-image"><img src="https://images.unsplash.com/photo-1584982751601-97dcc096659c?auto=format&fit=crop&w=900&q=85" alt="Oral cancer detection and care"></div>
     <div class="treatment-body"><i class="fa-solid fa-magnifying-glass"></i><h3>Oral Cancer Detection & Rehabilitation</h3><p>Clinical evaluation and rehabilitation-focused care for oral health concerns.</p></div>
   </article>
 
   <article class="treatment-card">
-    <div class="treatment-image"><img src="https://images.unsplash.com/photo-1618498082410-b4aa22193b38?auto=format&fit=crop&w=900&q=85" alt="Jaw cyst and tumor treatment"></div>
+    <div class="treatment-image"><img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=900&q=85" alt="Jaw cyst and tumor treatment"></div>
     <div class="treatment-body"><i class="fa-solid fa-circle-nodes"></i><h3>Cysts & Tumors of Jaws</h3><p>Assessment and treatment planning for cystic and tumor-related jaw conditions.</p></div>
   </article>
 
   <article class="treatment-card">
-    <div class="treatment-image"><img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=900&q=85" alt="Facial asymmetry correction"></div>
+    <div class="treatment-image"><img src="https://images.unsplash.com/photo-1550831107-1553da8c8464?auto=format&fit=crop&w=900&q=85" alt="Facial asymmetry correction"></div>
     <div class="treatment-body"><i class="fa-solid fa-face-smile"></i><h3>Facial Asymmetry Correction</h3><p>Individualized assessment and surgical planning for facial asymmetry.</p></div>
   </article>
 
   <article class="treatment-card">
-    <div class="treatment-image"><img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=900&q=85" alt="Oral surgery"></div>
+    <div class="treatment-image"><img src="https://images.unsplash.com/photo-1550831107-1553da8c8464?auto=format&fit=crop&w=900&q=85" alt="Oral surgery"></div>
     <div class="treatment-body"><i class="fa-solid fa-user-doctor"></i><h3>Oral & Maxillofacial Surgery</h3><p>Specialized surgical care for conditions affecting the mouth, jaws and face.</p></div>
   </article>
 
   <article class="treatment-card">
-    <div class="treatment-image"><img src="https://images.unsplash.com/photo-1580281657527-47f249e8f6f1?auto=format&fit=crop&w=900&q=85" alt="Emergency dental care"></div>
+    <div class="treatment-image"><img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=900&q=85" alt="Emergency dental care"></div>
     <div class="treatment-body"><i class="fa-solid fa-truck-medical"></i><h3>Emergency Dental Care</h3><p>Prompt clinical support for dental pain, trauma and urgent dental conditions.</p></div>
   </article>
 
   <article class="treatment-card">
-    <div class="treatment-image"><img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=900&q=85" alt="Pediatric dental care"></div>
+    <div class="treatment-image"><img src="https://images.unsplash.com/photo-1593022356769-11f762e66d1c?auto=format&fit=crop&w=900&q=85" alt="Pediatric dental care"></div>
     <div class="treatment-body"><i class="fa-solid fa-child"></i><h3>Children's Dentistry</h3><p>Gentle dental care designed around children's comfort and oral health.</p></div>
   </article>
 
   <article class="treatment-card">
-    <div class="treatment-image"><img src="https://images.unsplash.com/photo-1606265752439-1f18756aa2a5?auto=format&fit=crop&w=900&q=85" alt="Preventive dentistry"></div>
+    <div class="treatment-image"><img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=900&q=85" alt="Preventive dentistry"></div>
     <div class="treatment-body"><i class="fa-solid fa-shield-virus"></i><h3>Preventive Dentistry</h3><p>Checkups, cleaning and preventive strategies for long-term oral health.</p></div>
   </article>
 </div>
@@ -266,18 +266,23 @@ footer{background:#061A2C;padding:75px 6% 25px;color:#fff}.footer-grid{display:g
 
 <section class="before-after" id="before-after">
 <div class="container">
-<div class="section-title"><span>BEFORE & AFTER</span><h2>Treatment Results</h2><p>Browse the available before-and-after cases using the arrows.</p></div>
+<div class="section-title"><span>BEFORE & AFTER</span><h2>Treatment Results</h2><p>Browse treatment result cases using the manual slider.</p></div>
 <div class="ba-slider">
-  <button class="ba-arrow prev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+  <button class="ba-arrow prev" aria-label="Previous cases"><i class="fa-solid fa-chevron-left"></i></button>
   <div class="ba-track">
-    <div class="ba-slide active"><img src="a1.png" alt="Before and after case 1"></div>
-    <div class="ba-slide"><img src="a2.png" alt="Before and after case 2"></div>
-    <div class="ba-slide"><img src="a3.png" alt="Before and after case 3"></div>
-    <div class="ba-slide"><img src="a4.png" alt="Before and after case 4"></div>
-    <div class="ba-slide"><img src="a5.png" alt="Before and after case 5"></div>
-    <div class="ba-slide"><img src="a6.png" alt="Before and after case 6"></div>
+    <div class="ba-slides">
+      <div class="ba-slide"><img src="a1.png" alt="Before and after case 1"></div>
+      <div class="ba-slide"><img src="a2.png" alt="Before and after case 2"></div>
+      <div class="ba-slide"><img src="a3.png" alt="Before and after case 3"></div>
+      <div class="ba-slide"><img src="a4.png" alt="Before and after case 4"></div>
+      <div class="ba-slide"><img src="a5.png" alt="Before and after case 5"></div>
+      <div class="ba-slide"><img src="a6.png" alt="Before and after case 6"></div>
+    </div>
   </div>
-  <button class="ba-arrow next" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+  <button class="ba-arrow next" aria-label="Next cases"><i class="fa-solid fa-chevron-right"></i></button>
+</div>
+<div class="ba-controls">
+  <button class="ba-more" type="button" aria-label="Show more treatment result cases"><i class="fa-solid fa-images"></i> View More Cases</button>
 </div>
 <div class="ba-dots" aria-label="Before and after navigation"></div>
 </div>
@@ -462,25 +467,57 @@ document.querySelectorAll(".trust-box,.about-image,.about-content,.doctor-card,.
   el.classList.add("reveal"); revealObserver.observe(el);
 });
 
-const slides=[...document.querySelectorAll(".ba-slide")];
+const baSlides=[...document.querySelectorAll(".ba-slide")];
 const dotsWrap=document.querySelector(".ba-dots");
+const baTrack=document.querySelector(".ba-track");
+const baSlidesWrap=document.querySelector(".ba-slides");
+const moreCasesBtn=document.querySelector(".ba-more");
 let baIndex=0;
-if(slides.length && dotsWrap){
-  slides.forEach((_,i)=>{
-    const dot=document.createElement("button");
-    dot.className="ba-dot"+(i===0?" active":"");
-    dot.setAttribute("aria-label",`Show case ${i+1}`);
-    dot.addEventListener("click",()=>showBA(i));
-    dotsWrap.appendChild(dot);
-  });
-  const dots=[...dotsWrap.querySelectorAll(".ba-dot")];
-  function showBA(index){
-    baIndex=(index+slides.length)%slides.length;
-    slides.forEach((s,i)=>s.classList.toggle("active",i===baIndex));
-    dots.forEach((d,i)=>d.classList.toggle("active",i===baIndex));
+
+if(baSlides.length && dotsWrap && baSlidesWrap && baTrack){
+  function visibleCount(){
+    if(window.innerWidth<=480) return 1;
+    if(window.innerWidth<=768) return 2;
+    return 4;
   }
+
+  function maxIndex(){
+    return Math.max(0,baSlides.length-visibleCount());
+  }
+
+  function buildDots(){
+    dotsWrap.innerHTML="";
+    const total=maxIndex()+1;
+    for(let i=0;i<total;i++){
+      const dot=document.createElement("button");
+      dot.className="ba-dot"+(i===baIndex?" active":"");
+      dot.setAttribute("aria-label",`Show cases ${i+1}`);
+      dot.addEventListener("click",()=>showBA(i));
+      dotsWrap.appendChild(dot);
+    }
+  }
+
+  function showBA(index){
+    baIndex=Math.max(0,Math.min(index,maxIndex()));
+    const firstSlide=baSlides[0];
+    const gap=parseFloat(getComputedStyle(baSlidesWrap).gap)||0;
+    const step=firstSlide.getBoundingClientRect().width+gap;
+    baSlidesWrap.style.transform=`translateX(-${baIndex*step}px)`;
+    [...dotsWrap.querySelectorAll(".ba-dot")].forEach((d,i)=>d.classList.toggle("active",i===baIndex));
+  }
+
   document.querySelector(".ba-arrow.prev").addEventListener("click",()=>showBA(baIndex-1));
   document.querySelector(".ba-arrow.next").addEventListener("click",()=>showBA(baIndex+1));
+
+  if(moreCasesBtn){
+    moreCasesBtn.addEventListener("click",()=>{
+      showBA(baIndex<maxIndex()?baIndex+1:0);
+    });
+  }
+
+  buildDots();
+  window.addEventListener("resize",()=>{baIndex=Math.min(baIndex,maxIndex());buildDots();showBA(baIndex);});
+  window.addEventListener("load",()=>showBA(0));
 }
 
 document.querySelectorAll(".gallery-item").forEach(item=>{
