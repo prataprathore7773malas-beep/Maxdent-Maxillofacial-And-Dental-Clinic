@@ -65,7 +65,34 @@ footer{background:#061A2C;padding:75px 6% 25px;color:#fff}.footer-grid{display:g
 @media(max-width:900px){.hero-wrapper,.about-wrapper,.appointment-wrapper{grid-template-columns:1fr}.hero{text-align:center}.hero p{margin-left:auto;margin-right:auto}.hero-buttons,.hero-stats{justify-content:center}.hero-side{margin-top:20px}.doctor-grid{grid-template-columns:1fr}.doctor-photo{min-height:430px}.doctor-card-no-photo{min-height:0}.doctor-card-no-photo .doctor-content{padding:30px}}
 @media(max-width:768px){section{padding:70px 6%}.top-inner{flex-direction:column;gap:5px;text-align:center}.top-left,.top-right{justify-content:center;flex-wrap:wrap;gap:12px}.navbar{padding:11px 6%}.nav-btn{display:none}.menu-btn{display:block}.nav-links{position:fixed;top:78px;left:-100%;width:100%;background:#fff;flex-direction:column;padding:25px 30px;gap:17px;transition:.35s;box-shadow:0 15px 35px rgba(0,0,0,.09)}.nav-links.active{left:0}.hero{min-height:760px;padding:85px 6%}.hero h1{font-size:42px}.hero-side{display:none}.trust-grid,.why-grid,.treatment-grid,.review-grid,.clinic-address-grid{grid-template-columns:1fr}.about-features{grid-template-columns:1fr}.doctor-card{grid-template-columns:1fr}.doctor-photo{height:360px;min-height:0}.appointment-form{padding:25px}.ba-slider{gap:8px}.ba-track{min-height:0}.ba-slides{gap:12px}.ba-slide{flex:0 0 calc((100% - 12px)/2);height:260px}.ba-arrow{width:45px;height:45px;min-width:45px}.emergency h2{font-size:31px}.footer-grid{grid-template-columns:1fr;text-align:center}.whatsapp-float,.call-float,#scrollTop{width:54px;height:54px;font-size:21px}.whatsapp-float{right:15px;bottom:15px}.call-float{right:15px;bottom:80px}#scrollTop{left:15px;bottom:15px}.ct-comparison-grid,.fracture-case-wrapper{grid-template-columns:1fr}.ct-comparison-card img{height:280px}.fracture-case-images{gap:12px}.fracture-case-image img{height:220px}.fracture-case-image h3{font-size:14px}}
 @media(max-width:480px){.ba-slide{flex:0 0 100%;height:300px}h2{font-size:29px}.hero h1{font-size:34px}.section-title{margin-bottom:40px}.doctor-content{padding:25px}.doctor-content h3{font-size:23px}.treatment-image{height:190px}}
-@media(max-width:420px){.fracture-case-images{grid-template-columns:1fr}.fracture-case-image img{height:260px}}
+/* Single Rectangular Image - Mandible Fracture */
+.fracture-case-images.single-fracture-image {
+    display: block;
+    width: 100%;
+}
+
+.single-fracture-image .fracture-case-image {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.single-fracture-image .fracture-case-image img {
+    display: block;
+    width: 100%;
+    height: 360px;
+    object-fit: contain;
+    background: #fff;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .single-fracture-image .fracture-case-image img {
+        height: 280px;
+    }
+}  
 </style>
 </head>
 
@@ -338,16 +365,15 @@ footer{background:#061A2C;padding:75px 6% 25px;color:#fff}.footer-grid{display:g
         <p>CT scans help clinicians assess the fracture's location and characteristics and support treatment planning and follow-up evaluation.</p>
         <p>The images displayed here are provided for clinical information. Individual treatment decisions and outcomes depend on the patient's condition and the treating clinician's assessment.</p>
       </div>
-      <div class="fracture-case-images">
-        <article class="fracture-case-image">
-          <img src="1.png" alt="CT scan associated with mandible condylar fracture repair, image 1" loading="lazy">
-          <h3>CT Scan — Image 1</h3>
-        </article>
-        <article class="fracture-case-image">
-          <img src="2.jpeg" alt="CT scan associated with mandible condylar fracture repair, image 2" loading="lazy">
-          <h3>CT Scan — Image 2</h3>
-        </article>
-      </div>
+      <div class="fracture-case-images single-fracture-image">
+    <article class="fracture-case-image">
+        <img
+            src="1.png"
+            alt="Mandible Condylar Fracture Repair"
+            loading="lazy"
+        >
+    </article>
+</div>
     </div>
   </div>
 </section>
