@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 :root{--primary:#073B66;--secondary:#0A6EA8;--accent:#16A8D4;--dark:#061A2C;--light:#fff;--text:#5E7082;--bg:#F5F9FC;--border:#DCE7F0;--radius:20px;--shadow:0 18px 45px rgba(6,38,64,.10)}
@@ -33,6 +34,25 @@ header{position:sticky;top:0;left:0;width:100%;z-index:1000;background:rgba(255,
 .why-us{background:#fff}.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}.why-card{padding:32px 25px;text-align:center;border-radius:20px;box-shadow:var(--shadow);border:1px solid var(--border);transition:.35s}.why-card:hover{transform:translateY(-10px);border-color:#8EC7E2}.why-card i,.treatment-body>i{width:76px;height:76px;margin:auto;display:flex;align-items:center;justify-content:center;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;font-size:29px;margin-bottom:18px}
 .treatments{background:var(--bg)}.treatment-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}.treatment-card{background:#fff;border-radius:22px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--border);transition:.35s}.treatment-card:hover{transform:translateY(-9px)}.treatment-image{height:205px;overflow:hidden}.treatment-image img{height:100%;object-fit:cover;transition:.5s}.treatment-card:hover .treatment-image img{transform:scale(1.06)}.treatment-body{padding:25px;text-align:center}.treatment-body>i{width:58px;height:58px;font-size:22px;margin-top:-53px;position:relative;border:4px solid #fff}.treatment-body h3{font-size:20px;color:var(--primary);margin:5px 0 9px}.treatment-body p{font-size:14px}
 .before-after{background:var(--bg)}.ba-slider{position:relative;max-width:1200px;margin:auto;display:flex;align-items:center;gap:14px}.ba-track{flex:1;overflow:hidden;border-radius:22px}.ba-slides{display:flex;gap:20px;transition:transform .55s ease}.ba-slide{flex:0 0 calc((100% - 60px)/4);height:330px;background:#fff;border-radius:20px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--border)}.ba-slide img{width:100%;height:100%;object-fit:cover;background:#fff}.ba-arrow{width:52px;height:52px;min-width:52px;border:0;border-radius:50%;background:var(--primary);color:#fff;font-size:19px;cursor:pointer;box-shadow:var(--shadow);transition:.3s;z-index:2}.ba-arrow:hover{transform:scale(1.08);background:var(--secondary)}.ba-dots{text-align:center;margin-top:22px}.ba-dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:#BCD1DE;margin:0 5px;cursor:pointer;border:0}.ba-dot.active{background:var(--primary)}.ba-controls{text-align:center;margin-top:24px}.ba-more{display:inline-flex;align-items:center;gap:9px;padding:13px 24px;border:0;border-radius:50px;background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;font:600 15px Poppins,sans-serif;cursor:pointer;box-shadow:var(--shadow);transition:.3s}.ba-more:hover{transform:translateY(-4px)}
+
+/* Added CT Scan and Mandible Fracture Sections */
+.ct-comparison{background:var(--bg)}
+.ct-comparison-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:30px;max-width:1050px;margin:auto}
+.ct-comparison-card{background:#fff;border:1px solid var(--border);border-radius:22px;overflow:hidden;box-shadow:var(--shadow);transition:.35s}
+.ct-comparison-card:hover{transform:translateY(-7px)}
+.ct-comparison-card img{width:100%;height:350px;object-fit:contain;background:#fff;padding:12px}
+.ct-comparison-content{padding:24px;text-align:center}
+.ct-comparison-content h3{color:var(--primary);margin-bottom:10px;font-size:22px}
+.ct-label{display:inline-block;padding:7px 17px;border-radius:30px;background:#E6F4FA;color:var(--primary);font-size:13px;font-weight:700;margin-bottom:14px}
+.fracture-case{background:#fff}
+.fracture-case-wrapper{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.fracture-case-content h2{color:var(--primary);margin-bottom:18px}
+.fracture-case-content p{margin-bottom:16px}
+.fracture-case-images{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.fracture-case-image{background:var(--bg);border:1px solid var(--border);border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
+.fracture-case-image img{width:100%;height:290px;object-fit:contain;background:#fff;padding:10px}
+.fracture-case-image h3{padding:15px 10px;text-align:center;color:var(--primary);font-size:17px}
+
 .reviews{background:#fff}.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}.review-card{padding:32px;background:#fff;border:1px solid var(--border);border-radius:20px;box-shadow:var(--shadow)}.review-stars{color:#F5B400;font-size:21px;margin-bottom:12px}.review-card h3{color:var(--primary);margin-bottom:12px}
 .appointment{background:#F1F7FB}.appointment-wrapper{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.appointment-content h2{margin-bottom:18px}.appointment-content p{margin-bottom:25px}.appointment-content ul li{margin:13px 0;font-weight:500}.appointment-content li i{color:var(--secondary);margin-right:9px}.appointment-form{background:#fff;padding:38px;border-radius:22px;box-shadow:var(--shadow)}.input-group{margin-bottom:17px}.input-group input,.input-group textarea,.input-group select{width:100%;padding:14px 17px;border:1px solid var(--border);border-radius:12px;font:inherit;outline:none;transition:.3s}.input-group input:focus,.input-group textarea:focus,.input-group select:focus{border-color:var(--secondary);box-shadow:0 0 0 3px rgba(10,110,168,.08)}.input-group textarea{resize:vertical}.appointment-form button{width:100%;border:0}
 .faq{background:#fff}.faq-container{max-width:900px;margin:auto}.faq-item{background:#fff;border-radius:17px;box-shadow:var(--shadow);margin-bottom:18px;overflow:hidden;border:1px solid var(--border)}.faq-question{width:100%;padding:20px 23px;display:flex;justify-content:space-between;align-items:center;border:0;background:#fff;font-size:17px;font-weight:600;cursor:pointer;color:var(--dark);text-align:left}.faq-question i{color:var(--secondary);transition:.3s}.faq-answer{max-height:0;overflow:hidden;transition:.4s}.faq-answer p{padding:0 23px 22px}
@@ -40,13 +60,15 @@ header{position:sticky;top:0;left:0;width:100%;z-index:1000;background:rgba(255,
 .emergency{padding:90px 6%;background:linear-gradient(135deg,var(--primary),var(--secondary));text-align:center}.emergency h2{font-size:45px;color:#fff;margin-bottom:15px}.emergency p{color:#EAF7FD;max-width:700px;margin:0 auto 30px}.emergency .hero-buttons{justify-content:center;margin-bottom:0}.emergency .btn-primary{background:#fff;color:var(--primary)}.emergency .btn-secondary{border-color:#fff}
 footer{background:#061A2C;padding:75px 6% 25px;color:#fff}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1.3fr;gap:45px}.footer-grid h2,.footer-grid h3{margin-bottom:18px}.footer-grid p,.footer-grid li{color:#B9CBD8;margin-bottom:10px}.footer-grid a:hover{color:#5BD4F5}.copyright{margin-top:45px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);text-align:center}.copyright p{color:#91A6B5;margin:5px}.whatsapp-float,.call-float,#scrollTop{position:fixed;width:59px;height:59px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:25px;color:#fff;box-shadow:0 12px 25px rgba(0,0,0,.23);transition:.35s;z-index:999;border:0}.whatsapp-float{right:20px;bottom:20px;background:#25D366}.call-float{right:20px;bottom:92px;background:var(--primary)}#scrollTop{left:20px;bottom:20px;background:#0A6EA8;opacity:0;visibility:hidden;cursor:pointer}#scrollTop.show{opacity:1;visibility:visible}.whatsapp-float:hover,.call-float:hover,#scrollTop:hover{transform:translateY(-6px) scale(1.06)}
 .reveal{opacity:0;transform:translateY(45px);transition:all .8s ease}.reveal.visible{opacity:1;transform:none}
+
 @media(max-width:1100px){.nav-links{gap:14px}.nav-links a{font-size:13px}.trust-grid{grid-template-columns:repeat(2,1fr)}.why-grid,.treatment-grid{grid-template-columns:repeat(2,1fr)}.review-grid{grid-template-columns:repeat(2,1fr)}.clinic-address-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:900px){.hero-wrapper,.about-wrapper,.appointment-wrapper{grid-template-columns:1fr}.hero{text-align:center}.hero p{margin-left:auto;margin-right:auto}.hero-buttons,.hero-stats{justify-content:center}.hero-side{margin-top:20px}.doctor-grid{grid-template-columns:1fr}.doctor-photo{min-height:430px}.doctor-card-no-photo{min-height:0}.doctor-card-no-photo .doctor-content{padding:30px}}
-@media(max-width:768px){section{padding:70px 6%}.top-inner{flex-direction:column;gap:5px;text-align:center}.top-left,.top-right{justify-content:center;flex-wrap:wrap;gap:12px}.navbar{padding:11px 6%}.nav-btn{display:none}.menu-btn{display:block}.nav-links{position:fixed;top:78px;left:-100%;width:100%;background:#fff;flex-direction:column;padding:25px 30px;gap:17px;transition:.35s;box-shadow:0 15px 35px rgba(0,0,0,.09)}.nav-links.active{left:0}.hero{min-height:760px;padding:85px 6%}.hero h1{font-size:42px}.hero-side{display:none}.trust-grid,.why-grid,.treatment-grid,.review-grid,.clinic-address-grid{grid-template-columns:1fr}.about-features{grid-template-columns:1fr}.doctor-card{grid-template-columns:1fr}.doctor-photo{height:360px;min-height:0}.appointment-form{padding:25px}.ba-slider{gap:8px}.ba-track{min-height:0}.ba-slides{gap:12px}.ba-slide{flex:0 0 calc((100% - 12px)/2);height:260px}.ba-arrow{width:45px;height:45px;min-width:45px}.emergency h2{font-size:31px}.footer-grid{grid-template-columns:1fr;text-align:center}.whatsapp-float,.call-float,#scrollTop{width:54px;height:54px;font-size:21px}.whatsapp-float{right:15px;bottom:15px}.call-float{right:15px;bottom:80px}#scrollTop{left:15px;bottom:15px}}
+@media(max-width:768px){section{padding:70px 6%}.top-inner{flex-direction:column;gap:5px;text-align:center}.top-left,.top-right{justify-content:center;flex-wrap:wrap;gap:12px}.navbar{padding:11px 6%}.nav-btn{display:none}.menu-btn{display:block}.nav-links{position:fixed;top:78px;left:-100%;width:100%;background:#fff;flex-direction:column;padding:25px 30px;gap:17px;transition:.35s;box-shadow:0 15px 35px rgba(0,0,0,.09)}.nav-links.active{left:0}.hero{min-height:760px;padding:85px 6%}.hero h1{font-size:42px}.hero-side{display:none}.trust-grid,.why-grid,.treatment-grid,.review-grid,.clinic-address-grid{grid-template-columns:1fr}.about-features{grid-template-columns:1fr}.doctor-card{grid-template-columns:1fr}.doctor-photo{height:360px;min-height:0}.appointment-form{padding:25px}.ba-slider{gap:8px}.ba-track{min-height:0}.ba-slides{gap:12px}.ba-slide{flex:0 0 calc((100% - 12px)/2);height:260px}.ba-arrow{width:45px;height:45px;min-width:45px}.emergency h2{font-size:31px}.footer-grid{grid-template-columns:1fr;text-align:center}.whatsapp-float,.call-float,#scrollTop{width:54px;height:54px;font-size:21px}.whatsapp-float{right:15px;bottom:15px}.call-float{right:15px;bottom:80px}#scrollTop{left:15px;bottom:15px}.ct-comparison-grid,.fracture-case-wrapper{grid-template-columns:1fr}.ct-comparison-card img{height:280px}.fracture-case-images{gap:12px}.fracture-case-image img{height:220px}.fracture-case-image h3{font-size:14px}}
 @media(max-width:480px){.ba-slide{flex:0 0 100%;height:300px}h2{font-size:29px}.hero h1{font-size:34px}.section-title{margin-bottom:40px}.doctor-content{padding:25px}.doctor-content h3{font-size:23px}.treatment-image{height:190px}}
-
+@media(max-width:420px){.fracture-case-images{grid-template-columns:1fr}.fracture-case-image img{height:260px}}
 </style>
 </head>
+
 <body>
 
 <div class="top-bar">
@@ -242,11 +264,10 @@ footer{background:#061A2C;padding:75px 6% 25px;color:#fff}.footer-grid{display:g
     <div class="treatment-image"><img src="https://images.unsplash.com/photo-1777793389944-f7165259a05c?auto=format&fit=crop&w=900&q=85" alt="Preventive dentistry"></div>
     <div class="treatment-body"><i class="fa-solid fa-shield-virus"></i><h3>Preventive Dentistry</h3><p>Checkups, cleaning and preventive strategies for long-term oral health.</p></div>
   </article>
+
 </div>
 </div>
 </section>
-
-
 
 <section class="before-after" id="before-after">
 <div class="container">
@@ -270,6 +291,65 @@ footer{background:#061A2C;padding:75px 6% 25px;color:#fff}.footer-grid{display:g
 </div>
 <div class="ba-dots" aria-label="Before and after navigation"></div>
 </div>
+</section>
+
+<!-- NEW SECTION 1: CT SCAN BEFORE & AFTER -->
+<section class="ct-comparison" id="ct-before-after">
+  <div class="container">
+    <div class="section-title">
+      <span>CT SCAN COMPARISON</span>
+      <h2>Before & After Treatment</h2>
+      <p>A visual comparison of CT scan images taken before and after treatment, supporting clinical assessment and follow-up evaluation.</p>
+    </div>
+    <div class="ct-comparison-grid">
+      <article class="ct-comparison-card">
+        <img src="before.jpeg" alt="CT scan image before treatment" loading="lazy">
+        <div class="ct-comparison-content">
+          <span class="ct-label">BEFORE TREATMENT</span>
+          <h3>Pre-Treatment CT Scan</h3>
+          <p>CT imaging used to assess the condition before treatment and support clinical planning.</p>
+        </div>
+      </article>
+      <article class="ct-comparison-card">
+        <img src="after.jpeg" alt="CT scan image after treatment" loading="lazy">
+        <div class="ct-comparison-content">
+          <span class="ct-label">AFTER TREATMENT</span>
+          <h3>Post-Treatment CT Scan</h3>
+          <p>Follow-up CT imaging used by the treating clinician to assess the condition after treatment.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- NEW SECTION 2: MANDIBLE CONDYLAR FRACTURE REPAIR -->
+<section class="fracture-case" id="mandible-fracture">
+  <div class="container">
+    <div class="section-title">
+      <span>MAXILLOFACIAL SURGERY</span>
+      <h2>Mandible Condylar Fracture Repair</h2>
+      <p>CT scan images associated with the assessment and management of a mandibular condylar fracture.</p>
+    </div>
+    <div class="fracture-case-wrapper">
+      <div class="fracture-case-content">
+        <span class="section-tag">CLINICAL CASE</span>
+        <h2>Mandible Condylar Fracture Repair</h2>
+        <p>The mandibular condyle is part of the lower jaw joint. Fractures in this region require careful clinical evaluation and an individualized treatment plan.</p>
+        <p>CT scans help clinicians assess the fracture's location and characteristics and support treatment planning and follow-up evaluation.</p>
+        <p>The images displayed here are provided for clinical information. Individual treatment decisions and outcomes depend on the patient's condition and the treating clinician's assessment.</p>
+      </div>
+      <div class="fracture-case-images">
+        <article class="fracture-case-image">
+          <img src="1.jpeg" alt="CT scan associated with mandible condylar fracture repair, image 1" loading="lazy">
+          <h3>CT Scan — Image 1</h3>
+        </article>
+        <article class="fracture-case-image">
+          <img src="2.jpeg" alt="CT scan associated with mandible condylar fracture repair, image 2" loading="lazy">
+          <h3>CT Scan — Image 2</h3>
+        </article>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="reviews" id="reviews">
@@ -508,7 +588,6 @@ const year=document.getElementById("year");
 if(year) year.textContent=new Date().getFullYear();
 window.addEventListener("load",()=>document.body.style.opacity="1");
 console.log("Maxdent updated website loaded successfully");
-
 </script>
 </body>
 </html>
